@@ -1,0 +1,85 @@
+@font-face{font-family:'KPrata';src:url(fonts/prata-cyrillic.woff2) format('woff2');font-weight:400;font-style:normal;font-display:swap;unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'KPrata';src:url(fonts/prata-latin.woff2) format('woff2');font-weight:400;font-style:normal;font-display:swap;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+
+:root{--gr:#3E2C22;--gr2:#4B372B;--pa:#FBF6EE;--li:#F2E7D6;--kr:#C98B3A;--ink:#2A1F18;--cream:#FBF6EE;--brass:#C98B3A;--acc:#B9772C}
+html{--tile:#D9C3A3}
+.curtain .wm,.foot .wm,.logo span{font-family:'KPrata',var(--serif);font-weight:400;text-transform:uppercase;letter-spacing:.14em}
+.logo span{font-size:.82em}
+.logo .lamp{color:var(--acc)}
+.demo-strip{background:var(--gr);color:var(--cream)}
+.st.on{color:#5E8A4E}
+.mer-badge{background:#3E2C22}
+.sv2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:center;text-align:left;padding:clamp(36px,5vw,72px) clamp(16px,4vw,56px)}
+.sv2 .cap.xxl{font-size:clamp(56px,8vw,130px)}
+.sv2 .hbtns{justify-content:flex-start}
+.sv2 .lead{max-width:500px}
+.sw{display:inline-flex;gap:26px;margin:18px 0 26px;border-bottom:1px solid var(--line2)}
+.sw button{background:none;border:0;padding:0 0 10px;font:800 13px/1 var(--sans);text-transform:uppercase;letter-spacing:.08em;color:var(--mut);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
+.sw button[aria-selected=true]{color:var(--ink);border-color:var(--acc)}
+.svp .px{aspect-ratio:4/5;border-radius:220px 220px 14px 14px;overflow:hidden}
+.svp .px img{width:100%;height:100%;object-fit:cover}
+.zst{display:flex;gap:14px;flex-wrap:wrap;margin-top:16px;font-size:14px}
+.zst [data-lnow]{color:var(--acc);font-weight:700}
+.sv2 .award{color:var(--acc)}
+.lunch{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,80px);align-items:center;padding:clamp(80px,11vw,150px) clamp(16px,4vw,56px)}
+.lunch .px{aspect-ratio:3/2;border-radius:14px}
+.lunch .px img,.master .px img,.nameb .px img{width:100%;height:100%;object-fit:cover}
+.lnow{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin:6px 0 16px}
+.lnow b{font:800 clamp(52px,6vw,96px)/1 var(--sans);letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.lnow span{font-weight:700;color:var(--kr)}
+.big2{font:400 italic clamp(22px,2.4vw,34px)/1.22 var(--serif);margin:18px 0;max-width:560px}
+.lunch .lead{color:rgba(251,246,238,.78)}
+.master{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);padding:clamp(80px,11vw,150px) clamp(16px,4vw,56px);align-items:end}
+.master .px{aspect-ratio:3/2;border-radius:14px}
+.afisha{grid-column:1/-1;list-style:none;margin:20px 0 0;padding:0;border-top:1.5px solid var(--ink)}
+.afisha li{display:grid;grid-template-columns:110px minmax(0,1fr) 160px auto;gap:16px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line2)}
+.afisha i{font:700 10px/1 var(--sans);font-style:normal;text-transform:uppercase;letter-spacing:.14em;color:var(--acc)}
+.afisha b{font:800 clamp(16px,1.6vw,21px)/1.2 var(--sans);text-transform:uppercase;letter-spacing:-.01em}
+.afisha span{color:var(--mut);font-size:14px}
+.nameb{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,80px);align-items:center;padding:clamp(80px,11vw,150px) clamp(16px,4vw,56px)}
+.nameb .px{aspect-ratio:4/5;border-radius:14px}
+.duo2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px;max-width:520px}
+.duo2 figure{margin:0}.duo2 img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px}
+.duo2 figcaption{margin-top:8px;font:700 11px/1.3 var(--sans);text-transform:uppercase;letter-spacing:.1em;color:var(--mut)}
+.fest{padding:clamp(80px,11vw,150px) clamp(16px,4vw,56px)}
+.fl3{list-style:none;margin:40px 0 34px;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid rgba(251,246,238,.25)}
+.fl3 li{padding:24px 22px 24px 0;display:flex;flex-direction:column;gap:8px;border-right:1px solid rgba(251,246,238,.18)}
+.fl3 li+li{padding-left:22px}.fl3 li:last-child{border-right:0}
+.fl3 b{font:800 18px/1.15 var(--sans);text-transform:uppercase}
+.fl3 span{font-size:14px;opacity:.72}
+@media(max-width:900px){.sv2,.lunch,.master,.nameb{grid-template-columns:1fr}.svp .px{aspect-ratio:1;max-height:60vh}.fl3{grid-template-columns:1fr}.fl3 li{border-right:0;border-bottom:1px solid rgba(251,246,238,.18);padding-left:0 !important}
+  .afisha li{grid-template-columns:1fr auto;gap:6px 14px}.afisha i{grid-column:1/-1}.afisha span{grid-column:1}.afisha .btn{grid-row:2/4;grid-column:2}}
+@media(max-width:760px){.cap.xxl,.sv2 .cap.xxl{font-size:15vw}.cap.l{font-size:10.5vw}}
+
+[hidden]{display:none !important}   /* скрытое остаётся скрытым, даже если у блока свой display */
+.cap{font-family:var(--sans);font-weight:800;letter-spacing:-.035em;text-transform:uppercase;line-height:.88}
+.cap.m{line-height:.94;letter-spacing:-.03em}.cap.xxl{font-weight:800;line-height:.82;letter-spacing:-.035em}
+.kick{display:block;font:400 20px/1.2 var(--serif);text-transform:none;letter-spacing:-.01em;background:none;padding:0;border-radius:0}
+.it,.quote,.drag .info .it,.si .it{font-family:var(--serif) !important;font-style:italic !important;font-weight:400 !important;text-transform:none !important;letter-spacing:0 !important}
+.mlist b{font:400 18px/1.25 var(--serif);text-transform:none;letter-spacing:0}
+.mcat h2{font-family:var(--sans);font-weight:800;text-transform:uppercase}
+.ranges .card .meta b{font:800 12.5px/1.2 var(--sans);text-transform:uppercase;letter-spacing:-.01em}
+.polka .tr{font-family:var(--serif) !important;font-style:italic !important;font-weight:400 !important;text-transform:none !important;letter-spacing:-.02em !important}
+.script{font-family:var(--serif) !important;font-style:italic !important;font-weight:400 !important;text-transform:none !important;letter-spacing:-.03em !important}
+.gives .gv b{font:400 22px/1.15 var(--serif);text-transform:none;letter-spacing:0}
+.lot h3{font-family:var(--sans);font-weight:800}
+.btn{font-family:var(--sans)}
+/* без «примет ИИ»: подпись раздела без цвета и курсива, кнопки текстовыми ссылками без рамок и заливок (пользователь, 22.10) */
+.kick{font:600 10.5px/1.4 var(--sans) !important;text-transform:uppercase !important;letter-spacing:.18em !important;color:var(--mut) !important;margin-bottom:18px}
+.kick::before{content:none !important}
+.btn,.btn.ghost,.btn.dark,.hero .ghost,.hbtns .btn{display:inline-flex;align-items:center;gap:10px;background:none !important;border:0 !important;border-bottom:1px solid currentColor !important;border-radius:0 !important;padding:0 0 7px !important;color:inherit !important;box-shadow:none !important;font:700 11px/1 var(--sans) !important;letter-spacing:.14em !important;text-transform:uppercase;transition:opacity .3s,gap .3s}
+.btn::after{content:'→';font-weight:400;letter-spacing:0}
+.btn:hover{opacity:.6;gap:16px;background:none !important;color:inherit !important}
+.hbtns{gap:34px !important}.hbtns .btn{margin-top:30px !important}
+.flt button,.mtabs a{border:0 !important;border-radius:0 !important;background:none !important;padding:6px 0 !important;margin-right:18px;color:var(--mut) !important;border-bottom:1px solid transparent !important}
+.flt button[aria-pressed=true],.mtabs a:hover{color:var(--fg) !important;border-bottom-color:currentColor !important}
+.lots{gap:0 48px !important}
+.lot{background:none !important;border:0 !important;border-top:1px solid var(--line2) !important;border-radius:0 !important;box-shadow:none !important;padding:22px 0 26px !important;color:inherit !important;--mut:inherit}
+.lot:hover{transform:none !important}
+.lot .rk{opacity:.6}
+.lot .tags{display:block;margin-bottom:8px}
+.lot .tags span{background:none !important;padding:0 !important;border-radius:0 !important;font:400 italic 16px/1.4 var(--serif)}
+.lot .tags span+span::before{content:' · '}
+.lot .pr{opacity:.65}
+.lot .q{width:auto !important;height:auto !important;border-radius:0 !important;background:none !important;color:inherit !important;right:0 !important;top:22px !important;display:block !important;text-align:right;font:800 26px/1 var(--sans) !important;letter-spacing:-.02em}
+.lot .q small{font:600 9px/1 var(--sans) !important;letter-spacing:.12em;opacity:.6;margin-top:6px}
